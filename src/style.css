@@ -25,8 +25,16 @@ body {
     transform-origin: top left;
    
   }
+  .wrapper-about {
+    display: flex;
+    flex-direction: row;
+    width: 200vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+   
+  }
   .one {
-    background: #ffffff;
+    background: #eaeaea;
   }
   .two {
     background: #a3f3d3;
