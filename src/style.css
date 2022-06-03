@@ -3,19 +3,33 @@
   --default-font-family:'Source Sans Pro', sans-serif;
   --accent-color: #FE7228;
   --white-color:#ffffff;
-  --light-bg: rgba(234,234,234,0.5);
+  --light-bg: rgba(234,234,234,0.8);
   --dark-color:#2A2627;
 }
 body {
     margin: 0;
     padding: 0;
     font-family: var(--default-font-family);
-    
-  
   }
   .slide {
     width: 100vw;
     height: 100vh;
+  }
+.loading-text{
+  background-color: var(--light-bg);
+}
+  .loading-cover{
+    background: url(images/cover.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* For 100% screen height */
+    width:  50vw;
+  }
+  .cover-logo-fit{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
   }
   .wrapper {
     display: flex;
@@ -68,7 +82,7 @@ h1{
   height: 65%; /* only if you want fixed height */
 }
 .cover-project-img{
-  width: 300px;
+  width: 250px;
   display: block;
   margin: 0 auto;
 }
@@ -100,23 +114,48 @@ h1{
   background-color: var(--accent-color)!important;
 }
 .button-project{
-  background-color: var(--accent-color)!important;
   padding: 12px 24px!important;
   border-radius: 10px!important;
-  color:#ffffff !important;
+  color:var(--accent-color) !important;
+  border: 1px solid var(--accent-color)!important;
+}
+.white-card{
+  background-color: var(--white-color);
+}
+
+@media (max-width: 1200px){
+.loading-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1{
+  font-size: 60px;
+  font-family: var(--heading-font-family);
+  color: var(--dark-color);
+  font-weight: bold;
+  }
 }
 
 @media (max-width: 576px){
-  .hero{
+  .small-hero-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cover-hero{
     width: 100vw;
     height: 100vh;
     text-align: center;
     background: url(images/cover.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 100vh; /* For 100% screen height */
+    width:  100vw;
   }
   .hero h1{
-    font-size: 48px;
+    font-size: 34px;
     font-family: var(--heading-font-family);
     color: var(--dark-color);
     font-weight: bold;
@@ -127,6 +166,7 @@ h1{
     font-weight: bold;
     color: var(--dark-color);
     opacity: 0.8;
+    line-height: 1.5;
   }
   .logo-img{
     width: 250px;
@@ -136,5 +176,8 @@ h1{
   .hero .wr{
     background-color: var(--light-bg);
     padding: 25px 18px;
+  }
+  .slide-two{
+    align-items: center;
   }
 }
