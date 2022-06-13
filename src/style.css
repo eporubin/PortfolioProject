@@ -10,7 +10,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--default-font-family);
+    overflow: auto;
   }
+
   .slide {
     width: 100vw;
     height: 100vh;
@@ -71,7 +73,7 @@ body {
     -ms-overflow-style: none;
   }
   ::-webkit-scrollbar {
-    display:none;
+    display:auto;
   }
 h1{
     font-family: var(--heading-font-family)
@@ -121,6 +123,50 @@ h1{
 }
 .white-card{
   background-color: var(--white-color);
+  padding: 4px;
+  margin: 10px 10px;
+}
+.white-card-container{
+  max-width: 98% !important;
+  background-color: var(--white-color);
+  padding: 4px;
+  margin: 10px 10px;
+}
+.media-scroller::-webkit-scrollbar {
+  width: 5px;
+}
+.media-scroller::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+  border-radius: 100px;
+}
+.media-scroller::-webkit-scrollbar-thumb {
+  border: 5px solid transparent;
+    border-radius: 100px;
+    background-color:var(--accent-color);
+    /* background-clip: content-box; */
+}
+
+
+.media-scroller{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  padding: 0 60px 0 0;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.media-scroller-with-groups{
+  grid-auto-columns: 100%;
+  /* border: 2px solid hotpink; */
+}
+.media-group{
+display: grid;
+/* border: 2px solid green; */
+gap: 30px;
+grid-auto-flow: column;
+}
+.snaps-inline{
+scroll-snap-type:inline mandatory;
 }
 
 @media (max-width: 1200px){
@@ -144,8 +190,6 @@ h1{
     justify-content: center;
   }
   .cover-hero{
-    width: 100vw;
-    height: 100vh;
     text-align: center;
     background: url(images/cover.JPG);
     background-repeat: no-repeat;
