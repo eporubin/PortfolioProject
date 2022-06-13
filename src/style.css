@@ -169,17 +169,31 @@ grid-auto-flow: column;
 scroll-snap-type:inline mandatory;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1400px){
 .loading-text{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .hero h1{
   font-size: 60px;
   font-family: var(--heading-font-family);
   color: var(--dark-color);
   font-weight: bold;
+  }
+}
+@media(max-width: 992px){
+  h1{
+    text-align: center;
+  }
+  .white-card{
+    display: grid;
+  }
+  .element{
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
   }
 }
 
@@ -223,5 +237,13 @@ scroll-snap-type:inline mandatory;
   }
   .slide-two{
     align-items: center;
+  }
+  h2{
+    font-size: medium;
+  }
+  .button-central-link{
+    display: block;
+    text-align: center;
+    margin: 0 20px;
   }
 }
