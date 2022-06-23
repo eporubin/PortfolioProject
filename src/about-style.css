@@ -31,6 +31,25 @@
     }
   }
 
+.about-intro{
+ padding: 30px 40px 30px 0;
+ font-family: var(--heading-font-family);
+}
+
+.about-intro .subtitle{
+  font-size: 1.4rem;
+  font-family: var(--heading-font-family);
+  color: #FE7228;
+}
+div .title{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+div .description{
+  font-size: 1.3rem;
+  font-family: var(--default-font-family);
+}
+
  
   
   article {
@@ -64,15 +83,46 @@
     content: "";
   }
 
+  .about-story{
+    padding: 20px;
+  }
+  .button-credentials{
+    border-color: #FE7228!important;
+    color: #FE7228!important;
+    display: block!important;
+    margin: 0 auto;
+    width: 40%!important;
+    text-align: center;
+    transform: all .5s ease;
+  }
+  .button-credentials:hover{
+    background-color: #FE7228!important;
+    color: #fff!important;
+  }
+  @media (max-width: 1200px) {
+  
+    article{
+      width: 24em;
+      height: 24em;
+    }
+    article::before{
+      width: 24em;
+      height: 24em;
+    }
+    .about-hero{
+      min-height: 40vh;
+    }
+   
+  }
   @media (max-width: 992px) {
   
     article{
-      width: 26em;
-      height: 26em;
+      width: 22em;
+      height: 22em;
     }
     article::before{
-      width: 26em;
-      height: 26em;
+      width: 22em;
+      height: 22em;
     }
     .about-hero{
       min-height: 40vh;
@@ -82,27 +132,38 @@
   @media (max-width: 878px) {
   
     article{
-      width: 22em;
-      height: 22em;
+      width: 18em;
+      height: 18em;
     }
     article::before{
-      width: 22em;
-      height: 22em;
+      width: 18em;
+      height: 18em;
     }
     .about-hero{
       min-height: 40vh;
+    }
+    .about-intro .subtitle{
+      font-size: 1.2rem;
+    }
+    div .title{
+      font-size: 1.5rem;
+      padding-bottom: 10px;
+    }
+    div .description{
+      font-size: 1.0rem;
+      padding: 10px;
     }
    
   }
   @media (max-width: 768px) {
   
     article{
-      width: 18em;
-      height: 18em;
+      width: 16em;
+      height: 16em;
     }
     article::before{
-      width: 18em;
-      height: 18em;
+      width: 16em;
+      height: 16em;
     }
     .about-hero{
       min-height: 30vh;
@@ -112,12 +173,12 @@
   @media (max-width: 650px) {
   
     article{
-      width: 16em;
-      height: 16em;
+      width: 14em;
+      height: 14em;
     }
     article::before{
-      width: 16em;
-      height: 16em;
+      width: 14em;
+      height: 14em;
     }
     .about-hero{
       min-height: 20vh;
@@ -135,6 +196,18 @@
     }
     .about-hero{
       min-height: 40vh;
+    }
+    .about-intro {
+      text-align: center;
+    }
+    .subtitle{
+      font-size: smaller;
+    }
+    .about-story{
+      padding: 10px 40px !important;
+    }
+    .button-credentials{
+      width: auto!important;
     }
   }
 
