@@ -12,6 +12,9 @@ body {
     font-family: var(--default-font-family) !important;
     overflow: auto;
   }
+a{
+  text-decoration: none;
+}
 
   .loading-cover{
     background: url(images/cover.JPG);
@@ -168,7 +171,7 @@ transform: translate(-50%, -50%);
 opacity:0;
 background-color:rgba(255,255,255,1);
 border:5px solid #FE7228;
-color: #FE7228;
+color: #FE7228!important;
 } 
 .container-image:hover button {   
 opacity: 1;
