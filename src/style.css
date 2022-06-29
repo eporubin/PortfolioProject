@@ -45,7 +45,6 @@ h4{
   color: var(--accent-color)
 }
 
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -90,13 +89,13 @@ h4{
 /* topbar-nav style */
 .container-fluid{
   padding: 0!important;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #eaeaea;
-  position: sticky; /* Set the navbar to fixed position */
+  position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 100;

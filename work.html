@@ -21,26 +21,26 @@
     <script src="src/app.js"></script>
     <title>PORtfolio | Projects</title>
 </head>
-<header>
-    <div class="container-fluid">
-      <div class="topnav d-flex justify-content-between" id="myTopnav">
-        <div class="brand">
-          <a href="/index.html" class="brand"><b>POR</b>tfolio | Elena Porubin</a>
-        </div>
-        <div>
-          <a href="#"></a>
-          <a href="/about.html" >About</a>
-          <a href="/work.html" class="active">Projects</a>
-          <a href="/work.html">Gallery</a>
-          <a href="/contact.html">Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
 <body>
+    <header>
+        <div class="container-fluid pt-5">
+            <div class="topnav d-flex justify-content-between" id="myTopnav">
+                <div class="brand">
+                    <a href="/index.html" class="brand"><b>POR</b>tfolio | Elena Porubin</a>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <a href="/about.html">About</a>
+                    <a href="/work.html" class="active">Projects</a>
+                    <a href="/gallery.html">Gallery</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </header>
    <div class="container">
        <!-- page title container -->
        <div class="row mt-5 mb-3 p-3">
@@ -142,7 +142,7 @@
     <div class="container photo-card mb-5 pe-5">        
         <ol class="articles">
             <li class="articles__article " style="--animation-order:1">
-                <a class="articles__link img-holder-1 ">
+                <a class="articles__link img-holder-1" href="/gallery.html#detailed-architecture">
                         <div class="articles__content articles__content--lhs">
                             <h2 class="articles__title">Detailed architecture</h2>
                                 <div class="articles__footer">
@@ -160,7 +160,7 @@
                 </a>
             </li>
             <li class="articles__article" style="--animation-order:1">
-                <a class="articles__link img-holder-2">
+                <a class="articles__link img-holder-2" href="/gallery.html#monochrome">
                     <div class="articles__content articles__content--lhs">
                         <h2 class="articles__title">MonoChrome | Black & White </h2>
                         <div class="articles__footer">
@@ -218,9 +218,6 @@
           </a></li>
           </ul>
         </footer>
-      </div>
-
-  
-    
+      </div>    
 </body>
 </html>
