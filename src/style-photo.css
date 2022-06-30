@@ -34,13 +34,7 @@
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center center;
-}  
-.img-holder-3{
-    background-image: url('/src/images/photo/lonCover.jpeg');
-    background-size: cover;
-    background-repeat:   no-repeat;
-    background-position: center center;
-} 
+}   
 .img-holder-4{
     background-image: url('/src/images/photo/cover-seeoc.jpg');
     background-size: cover;

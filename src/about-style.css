@@ -50,9 +50,6 @@ div .description{
   font-size: 1.3rem;
   font-family: var(--default-font-family);
 }
-
- 
-  
   article {
     --c: #FE7228;
     --s0: calc(1.25em + 6px);
@@ -92,7 +89,7 @@ div .description{
     color: #FE7228!important;
     display: block!important;
     margin: 0 auto;
-    width: 40%!important;
+    width: 50%!important;
     text-align: center;
     transform: all .5s ease;
   }
