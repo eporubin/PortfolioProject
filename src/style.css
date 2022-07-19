@@ -130,6 +130,9 @@ h4 {
 .topnav .icon {
   display: none;
 }
+footer ul {
+  display: inline-flex;
+}
 footer a:hover{
   color: var(--accent-color)!important;
 }
@@ -137,13 +140,15 @@ footer i {
   font-size: 22px;
 }
 /* Navbar media queries */
-@media screen and (max-width: 768px) {
-  .topnav a:not(:first-child) {display: none;}
+
+  @media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
-}
+  }
+
 
 @media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
