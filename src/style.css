@@ -451,6 +451,9 @@ footer i {
 }
 
 @media (max-width: 576px){
+  footer{
+    text-align: center!important;
+  }
   .small-hero-align{
     display: flex;
     align-items: center;
