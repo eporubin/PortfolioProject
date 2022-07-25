@@ -139,6 +139,16 @@ footer a:hover{
 footer i {
   font-size: 22px;
 }
+
+@media screen and (min-width: 1700px){
+.element {
+  margin-top: 7rem;
+}
+.media-scroller {
+  margin-top: 10rem;
+}
+
+}
 /* Navbar media queries */
 
   @media screen and (max-width: 768px) {
